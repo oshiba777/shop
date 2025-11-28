@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 @custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     /* --color-main-color:rgb(00000);
     --color-text-color:rgb(0, 75, 187);
@@ -8,10 +9,94 @@
     --gap-my:60px;    */
 }
 
-.top_bar{
+.top_bar {
     height: 40px;
     background-color: #1a82cb;
-    
 }
 
 
+
+
+.form__item input {
+    border: black solid 2px;
+    background: #ffe347;
+    color: blue;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form__item input:hover {
+    background: #ffb547;
+}
+
+.form__item input:focus {
+    outline: 1px solid rgb(24, 24, 63);
+    outline-offset: 5px;
+}
+
+.form__item input:disabled {
+    color: rgb(112, 112, 112);
+    border-color: rgb(112, 112, 112);
+    background-color: #fff4b3;
+    ;
+}
+
+.form__item input:disabled:hover,
+.form__item input:disabled:focus {
+    outline: none;
+    background-color: #fff4b3;
+    ;
+}
+
+.form__item input[type=submit] {
+    background-color: #001c30;
+    color: aliceblue;
+}
+
+/* .form__item .form__btn {
+    background-color: #001c30;
+    color: aliceblue;
+} */
+
+.form__item input[type=text]:valid {
+    border-color: #c6ff42;
+    background-color: #c6ff42;
+}
+
+.form__item input[type=text]:invalid {
+    border-color: #e942ff;
+    background-color: #ef42ff;
+}
+
+/* .form__item input[type=text]:invalid::after{
+    content: "-";
+    color: red
+} */
+
+.form__item .color-radio {
+    /* appearance: auto; усли  цвет не применяется
+    accent-color: rgb(255, 51, 0);
+    width: 20px;
+    height: 20px; */
+    display: none;
+}
+
+.color-lable {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: black 1px solid;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.color-radio:checked+.color-lable {
+    outline: gray 3px solid;
+    outline-offset: 3px;
+}
+
+.filter-color{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}

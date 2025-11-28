@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" class="h-full">
+<html lang="en" class="h-full">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,44 +10,75 @@
 </head>
 
 <body class="bg-main-color text-text-color dark:bg-black dark:text h-full">
-  <header class="">
-      <div class="top_bar flex flex-col">
-        <p class=" text-[20px] text-stone-5
-        
-        0 text-center uppercase w-full">cкидка 3% при оплате онлайн</p>
-      </div>
-      <div flex flex-row>
-        <img class="w-[250px]  hei" src="public/img/logo_funday.jpg.png" alt="logo_funday">
-        <p class="text-28 text-black font-bold">Челябинск</p>
-      </div>
+  <header class="header__n">
+    <div class="top_bar flex flex-col">
+      <p class="text-[16px] font-[600]">New Drops</p>
+    </div>
+    <div flex flex-row>
+      <img class="w-[250px]  hei" src="public/img/logo_funday.jpg.png" alt="logo_funday">
+      <p class="text-28 text-black font-bold">Челябинск</p>
+    </div>
 
-    </header>
+  </header>
+
   <div class="grid grid-rows-[auto 1fr auto ] min-h-full container m-auto">
 
-    <main>
+    <main class="flex">
+      <div class="filter">
+        <h2>Filters</h2>
+        <form id="form-filter" action="">
+          <div class="form__item">
+            <div>
+              <label for="search">Введите название модели</label>
+            </div>
+            <div>
+              <input id="search" name="search" type="text" placeholder="Поиск" required>
+            </div>
+          </div>
+          <div class="form__item">
+            <h3>выбор цвета</h3>
+            <div class="filter-color">
+              <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-violet">
+                <label class="color-lable" for="color-violet" style="background-color: #4A69E2;" tabindex="0"></label>
+              </div>
+              <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-yellow">
+                <label class="color-lable" for="color-yellow" style="background-color: #FFA52F;" tabindex="0"></label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <input class="form__btn" type="submit" value="Искать">
+          </div>
+        </form>
+      </div>
       <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
-           <div class="text-center ">
+          <div class="text-center ">
             <p>circle</p>
-           </div>
-           <a href="card1.html" class="text-black text-center text-[14px] font-thin  hover:text-stone-500">
+          </div>
+          <a href="card1.html" class="text-black text-center text-[14px] font-thin  hover:text-stone-500">
             <h3> Свитер удлиненный коричневый </h3>
-           </a>
-           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-           <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+          </a>
+          <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
-           </div>
+          </div>
         </div>
 
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/hoodies.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -55,8 +86,9 @@
           <a href="#" class="text-black text-center text-[14px] font-thin  hover:text-stone-500">
             <h3> Свитер удлиненный коричневый </h3>
           </a>
-            <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+          <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
           </div>
@@ -65,7 +97,9 @@
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/knitted dress.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -74,16 +108,19 @@
             <h3> Свитер удлиненный коричневый </h3>
           </a>
           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
           </div>
         </div>
-        
+
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -92,24 +129,8 @@
             <h3> Свитер удлиненный коричневый </h3>
           </a>
           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
-            <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
-            <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
-          </div>
-        </div>
-        <div class="card_relative">
-          <div class="relative">
-            <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
-          </div>
-          <div class="text-center ">
-            <p>circle</p>
-          </div>
-          <a href="#" class="text-black text-center text-[14px] font-thin  hover:text-stone-500">
-            <h3> Свитер удлиненный коричневый </h3>
-          </a>
-          <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
           </div>
@@ -117,7 +138,9 @@
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -126,7 +149,8 @@
             <h3> Свитер удлиненный коричневый </h3>
           </a>
           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
           </div>
@@ -134,7 +158,9 @@
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -143,7 +169,8 @@
             <h3> Свитер удлиненный коричневый </h3>
           </a>
           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
           </div>
@@ -151,11 +178,9 @@
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
-            <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
-            <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
-            <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
-          </div>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -164,12 +189,23 @@
             <h3> Свитер удлиненный коричневый </h3>
           </a>
           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+            <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
+            <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
+          </div>
         </div>
         <div class="card_relative">
           <div class="relative">
             <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
+            <div
+              class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+              <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
+              <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
+            </div>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -178,7 +214,24 @@
             <h3> Свитер удлиненный коричневый </h3>
           </a>
           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+
+        </div>
+        <div class="card_relative">
+          <div class="relative">
+            <img src="/public/img/sweater.jpg" alt="свитер">
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
+          </div>
+          <div class="text-center ">
+            <p>circle</p>
+          </div>
+          <a href="#" class="text-black text-center text-[14px] font-thin  hover:text-stone-500">
+            <h3> Свитер удлиненный коричневый </h3>
+          </a>
+          <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
           </div>
@@ -187,7 +240,9 @@
 
           <div class="relative">
             <img src="/public/img/sweater.jpg" alt="свитер">
-            <p class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">хит продаж</p>
+            <p
+              class="bg-red-500 text-center w-[85px] rounded-sm absolute left-[50%] translate-[-50%] bottom-2  text-stone-50 text-[12px] uppercase">
+              хит продаж</p>
           </div>
           <div class="text-center ">
             <p>circle</p>
@@ -196,20 +251,21 @@
             <h3> Свитер удлиненный коричневый </h3>
           </a>
           <p class="text-[20px] m-[5px] font-semibold text-center ">2300 &#8381; </p>
-          <div class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
+          <div
+            class="absolute top-[10px] right-[10px] flex flex-col hover:bg-stone-50 p-2 rounded-sm transition cursor-pointer ">
             <i class="bi bi-heart text-gray-400 hover:text-gray-950 hover:scale-150 transition cursor-pointer"></i>
             <i class=" bi bi-cart3 text-gray-400 hover:text-gray-950 transition cursor-pointer"></i>
           </div>
         </div>
-          
 
 
-        </div>
+
       </div>
-    </main>
-    <footer>
-      <p> &copy; Сухополюева Екатерина, 2025</p>
-    </footer>
+  </div>
+  </main>
+  <footer>
+    <p> &copy; Сухополюева Екатерина, 2025</p>
+  </footer>
   </div>
   <script type="module" src="/src/main.js"></script>
 </body>
