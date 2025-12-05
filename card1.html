@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FUNDAY</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body class="bg-main-color text-text-color dark:bg-black dark:text h-full">
-   <header class="">
-      <div class="top_bar flex flex-col">
-        <p class=" text-[20px] text-stone-50 text-center uppercase w-full">cкидка 3% при оплате онлайн</p>
-      </div>
-      <div flex flex-row>
-        <img class="w-[250px]  hei" src="public/img/logo_funday.jpg.png" alt="logo_funday">
-        <p class="text-28 text-black font-bold">Челябинск</p>
-      </div>
 
-    </header>
-      <div class="grid grid-rows-[auto 1fr auto ] min-h-full container m-auto">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUNDAY</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="bg-main-color text-text-color dark:bg-black dark:text h-full">
+  <!-- <header class="">
+    <div class="top_bar flex flex-col">
+      <p class=" text-[20px] text-stone-50 text-center uppercase w-full">cкидка 3% при оплате онлайн</p>
+    </div>
+    <div flex flex-row>
+      <img class="w-[250px]  hei" src="public/img/logo_funday.jpg.png" alt="logo_funday">
+      <p class="text-28 text-black font-bold">Челябинск</p>
+    </div>
+
+  </header> -->
+  <div class="grid grid-rows-[auto 1fr auto ] min-h-full container m-auto">
     <main>
-        <div class="bread">
-          <a href="#">Главная</a>
-          <a href="#">Женщины</a>
-          <a href="#">Одежда</a>
-          <a href="#">Толстовки</a>
-          <a href="# " class=" text-stone-600" >Tолстовка флисовая</a>
-        </div>
-        <div class="card_full grid grid-cols-2">
+      <div class="card_full grid grid-cols-2">
+        <div class="gellery">
           <div class="card_1">
-            <img src="public/img/full.jpg" alt="в полный рост">
-          </div>      
-          <div class="card_1">
-            <img src="public/img/top.jpg" alt="половина">
+            <img src="public/img/adidas gray.png" alt="кроссовок">
+          </div>
+          <div class="card_2">
+            <img src="public/img/shoes feet.png" alt="">
+          </div>
+          <div class="card_3">
+            <img src="public/img/shoes.png" alt="">
+          </div>
+          <div class="card_4">
+            <img src="public/img/shoes heel.png" alt="">
           </div>
         </div>
-       </main>
-     </div> 
-    
+      
+      <div class="info">
+        <div class="prise mb-8">
+          <p class="font-semibold text-[32px] mb-2">ADIDAS 4DFWD X PARLEY RUNNING SHOES</p>
+          <p class="font-semibold text-[24px] text-[#4A69E2]">$125.00</p>
+        </div>
+        <div class="colors mb-8">
+          <h3 class=" font-semibold uppercase text-base mb-2">color</h3>
+          <div class="filter-color">
+            <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-dark-grey">
+              <label class="color-lable" for="color-dark-grey" style="background-color: #253043;" tabindex="0"></label>
+            </div>
+            <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-grey">
+              <label class="color-lable" for="color-grey" style="background-color: #707E6E;" tabindex="0"></label>
+            </div>
+          </div>
+        </div>
+           <div class="size mb-8">
+          <h3 class=" font-semibold uppercase text-base mb-2">Size</h3>
+          <div class="filter-size">
+            <div class="filter-size__item"> <input class="size-radio" type="radio" name="size" id="color-white">
+              <label class="size-lable" for="color-black" style="background-color: #ffffff;" tabindex="0"><p class="size">48</p></label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="buy mb-8">
+          <button type="button" class=" font-medium text-[14px] uppercase text-white bg-[#232321] rounded-lg  w-374 py-2.5 "> Add to cart</button>
+          <button type="button" class="bg-[#232321] rounded-lg  w-374 py-2.5 "><img src="public/img/heart.png" alt="в избранное"> </button>
+        </div>
+      </div>
+    </div>
+    </main>
+  </div>
 </body>
+
 </html>
