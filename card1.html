@@ -9,67 +9,268 @@
   <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body class="bg-main-color text-text-color dark:bg-black dark:text h-full">
-  <!-- <header class="">
-    <div class="top_bar flex flex-col">
-      <p class=" text-[20px] text-stone-50 text-center uppercase w-full">cкидка 3% при оплате онлайн</p>
-    </div>
-    <div flex flex-row>
-      <img class="w-[250px]  hei" src="public/img/logo_funday.jpg.png" alt="logo_funday">
-      <p class="text-28 text-black font-bold">Челябинск</p>
-    </div>
+<body class="bg-main-color text-text-color bg-[#E7E7E3] dark:text h-full">
+  <header class="header max-w-[1320px] mx-auto">
+    <div
+      class="header-inner bg-[#FAFAFA] rounded-3xl w-[1320px] max-h-[69px] flex items-center justify-between p-[32px] mb-[32px]">
+      <img class="w-[128px]" src="public/img/logo.svg" alt="logo_kicks">
+      <nav class="nav flex gap-[24px] text-[14px] font-semibold 
+position: relative ">
+        <a href="#">New Drops</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+      </nav>
 
-  </header> -->
+      <div class="header-actions gap-[40px] flex pr-0">
+        <button class="icon-btn" aria-label="Search">
+          <img src="public/img/search.png" alt="Search">
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <img src="public/img/card-png.png" alt="card">
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <img src="public/img/User.png" alt="card">
+        </button>
+      </div>
+    </div>
+  </header>
   <div class="grid grid-rows-[auto 1fr auto ] min-h-full container m-auto">
     <main>
       <div class="card_full grid grid-cols-2">
-        <div class="gellery">
-          <div class="card_1">
-            <img src="public/img/adidas gray.png" alt="кроссовок">
+        <div class="grid grid-cols-2 gap-2 grid-rows-2 justify-center">
+          <img class="h-auto max-w-full rounded-base" src="public/img/adidas gray.png" alt="кроссовок">
+          <img class="h-auto max-w-full rounded-base" src="public/img/adidas gray.png" alt="кроссовок">
+          <img class="h-auto max-w-full rounded-base" src="public/img/adidas gray.png" alt="кроссовок">
+          <img class="h-auto max-w-full rounded-base" src="public/img/adidas gray.png" alt="кроссовок">
+          <!-- <div class="card_1">
+            <img class="h-auto max-w-full rounded-base" src="public/img/adidas gray.png" alt="кроссовок">
           </div>
-          <div class="card_2">
+          <div class="h-auto max-w-full rounded-base" class="card_2">
             <img src="public/img/shoes feet.png" alt="">
           </div>
-          <div class="card_3">
+          <div class="h-auto max-w-full rounded-base " class="card_3">
             <img src="public/img/shoes.png" alt="">
           </div>
-          <div class="card_4">
+          <div class="h-auto max-w-full rounded-base" class="card_4">
             <img src="public/img/shoes heel.png" alt="">
+          </div> -->
+        </div>
+
+
+        <div class="info">
+          <div class="prise mb-8">
+            <p class="font-semibold text-[32px] mb-2">ADIDAS 4DFWD X PARLEY RUNNING SHOES</p>
+            <p class="font-semibold text-[24px] text-[#4A69E2]">$125.00</p>
           </div>
-        </div>
-      
-      <div class="info">
-        <div class="prise mb-8">
-          <p class="font-semibold text-[32px] mb-2">ADIDAS 4DFWD X PARLEY RUNNING SHOES</p>
-          <p class="font-semibold text-[24px] text-[#4A69E2]">$125.00</p>
-        </div>
-        <div class="colors mb-8">
-          <h3 class=" font-semibold uppercase text-base mb-2">color</h3>
-          <div class="filter-color">
-            <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-dark-grey">
-              <label class="color-lable" for="color-dark-grey" style="background-color: #253043;" tabindex="0"></label>
-            </div>
-            <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-grey">
-              <label class="color-lable" for="color-grey" style="background-color: #707E6E;" tabindex="0"></label>
+          <div class="colors mb-8">
+            <h3 class=" font-semibold uppercase text-base mb-2">color</h3>
+            <div class="filter-color ">
+              <div class="filter-color__item"> <input class="color-radio" type="radio" name="color"
+                  id="color-dark-grey">
+                <label class="color-lable" for="color-dark-grey" style="background-color: #253043;"
+                  tabindex="0"></label>
+              </div>
+              <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-grey">
+                <label class="color-lable" for="color-grey" style="background-color: #707E6E;" tabindex="0"></label>
+              </div>
             </div>
           </div>
-        </div>
-           <div class="size mb-8">
           <h3 class=" font-semibold uppercase text-base mb-2">Size</h3>
-          <div class="filter-size">
-            <div class="filter-size__item"> <input class="size-radio" type="radio" name="size" id="color-white">
-              <label class="size-lable" for="color-black" style="background-color: #ffffff;" tabindex="0"><p class="size">48</p></label>
+          <div class="size mb-8 grid grid-cols-5 gap-[4px] max-w-[260px]">
+            <div class="filter-size ">
+              <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+                <label
+                  class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]"
+                  for="color-black" tabindex="0">
+                  <p class="text-black">48</p>
+                </label>
+              </div>
             </div>
-            
+            <div class="filter-size ">
+              <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+                <label
+                  class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]"
+                  for="color-black" tabindex="0">
+                  <p class="text-black">48</p>
+                </label>
+              </div>
+            </div>
+            <div class="filter-size ">
+              <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+                <label
+                  class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]"
+                  for="color-black" tabindex="0">
+                  <p class="text-black">48</p>
+                </label>
+              </div>
+            </div>
+            <div class="filter-size ">
+              <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+                <label
+                  class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]"
+                  for="color-black" tabindex="0">
+                  <p class="text-black">48</p>
+                </label>
+              </div>
+            </div>
+            <div class="filter-size ">
+              <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+                <label
+                  class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]"
+                  for="color-black" tabindex="0">
+                  <p class="text-black">48</p>
+                </label>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="buy mb-8">
-          <button type="button" class=" font-medium text-[14px] uppercase text-white bg-[#232321] rounded-lg  w-374 py-2.5 "> Add to cart</button>
-          <button type="button" class="bg-[#232321] rounded-lg  w-374 py-2.5 "><img src="public/img/heart.png" alt="в избранное"> </button>
+          <div class="buy mb-[4px]">
+            <button type="button"
+              class="cursor-pointer  font-medium text-[14px] uppercase text-white bg-[#232321] rounded-lg md:py-[15px] md:px-[140px]  ">
+              Add to cart</button>
+            <button type="button"
+              class="bg-[#232321] cursor-pointer rounded-lg w-[48px] h-[48px] py-2.5 flex items-center justify-center">
+              <img class="size-[16px]" src="public/img/heart.svg" alt=""> </button>
+          </div>
+          <div>
+            <button class=" bg-[#4A69E2] rounded-lg py-[15px] px-[174px]  ">
+              <p class="text-white text-[14px] font-medium uppercase">Buy it now</p>
+            </button>
+          </div>
+          <div class="mt-[32px]">
+            <h3 class="font-semibold uppercase text-[16px] text-[#232321] mb-2">About the product</h3>
+            <div class="text-[16px] text-[#232321] ">
+              Shadow Navy / Army Green
+            </div>
+            <div class="text-[16px] text-[#232321] ">
+              This product is excluded from all promotional discounts and offers.
+            </div>
+            <ul type="disc" class="text-[16px] text-[#232321] list-style-position: inside">
+              <li>Pay over time in interest-free installments with Affirm, Klarna or Afterpay.</li>
+              <li>Join adiClub to get unlimited free standard shipping, returns, & exchanges.</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    </main>
+
+      <!-- gyfyuve65rbfiyuin9 -->
+      <section class="py-12">
+        <div class="max-w-[1320px] px-4">
+          <div class="flex items-center justify-between mb-8">
+            <h2 class="text-[48px] font-extrabold text-[#111827]">
+              You may also like
+            </h2>
+            <div class="flex gap-3">
+              <button id="sliderPrev"
+                class="h-9 w-9 rounded-md bg-[#111111] text-white flex items-center justify-center hover:bg-black/80">‹</button>
+              <button id="sliderNext"
+                class="h-9 w-9 rounded-md bg-[#111111] text-white flex items-center justify-center hover:bg-black/80">›
+              </button>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2 shrink-0">
+              <div class="card_relative">
+                <div class="relative rounded-[32px] border-[8px] border-white">
+                  <img src="/public/img/card-1.png" alt="серый кроссовок"
+                    class="w-full h-full object-cover rounded-3xl" />
+                  <div
+                    class="bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0 flex flex-col p-3 text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold">
+                    New </div>
+                </div>
+                <h3 class="mt-4 text-[20px] lg:text-[24px] font-bold uppercase leading-snug">
+                  adidas 4dfwd x parley running shoes
+                </h3>
+                <button
+                  class="mt-4 w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                  View Product -
+                  <span class="text-[#FFA52F]">$125</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2 shrink-0">
+              <div class="card_relative">
+                <div class="relative rounded-[32px] border-[8px] border-white">
+                  <img src="/public/img/card-1.png" alt="серый кроссовок"
+                    class="w-full h-full object-cover rounded-3xl" />
+                  <div
+                    class="bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0 flex flex-col p-3 text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold">
+                    New
+                  </div>
+                </div>
+                <h3 class="card_text mt-4 text-[20px] lg:text-[24px] font-bold uppercase leading-snug">
+                  adidas 4dfwd x parley running shoes
+                </h3>
+                <button
+                  class="mt-4 w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                  View Product -
+                  <span class="text-[#FFA52F]">$125</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2 shrink-0">
+              <div class="card_relative">
+                <div class="relative rounded-[32px] border-[8px] border-white">
+                  <img src="/public/img/card-1.png" alt="серый кроссовок"
+                    class="w-full h-full object-cover rounded-3xl" />
+                  <div
+                    class="bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0 flex flex-col p-3 text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold">
+                    New
+                  </div>
+                </div>
+                <h3 class="mt-4 text-[20px] lg:text-[24px] font-bold uppercase leading-snug">
+                  adidas 4dfwd x parley running shoes
+                </h3>
+                <button
+                  class="mt-4 w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                  View Product -
+                  <span class="text-[#FFA52F]">$125</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 lg:w-1/4 px-2 shrink-0">
+            <div class="card_relative">
+              <div class="relative rounded-[32px] border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок"
+                  class="w-full h-full object-cover rounded-3xl" />
+                <div
+                  class="bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0 flex flex-col p-3 text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold">
+                  New
+                </div>
+              </div>
+              <h3 class="mt-4 text-[20px] lg:text-[24px] font-bold uppercase leading-snug">
+                adidas 4dfwd x parley running shoes
+              </h3>
+              <button
+                class="mt-4 w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product -
+                <span class="text-[#FFA52F]">$125</span>
+              </button>
+            </div>
+          </div>
+       
+        </div>
+  </div>
+  <div class="mt-6 flex justify-center gap-2">
+    <button class="h-2 w-6 rounded-full bg-[#3b82f6]" id="dot"></button>
+    <button class="h-2 w-6 rounded-full bg-[#d1d5db]" id="dot"></button>
+    <button class="h-2 w-6 rounded-full bg-[#d1d5db]" id="dot"></button>
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+  </div>
+  </div>
+  </main>
   </div>
 </body>
 

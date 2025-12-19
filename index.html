@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-full">
+<html lang="ru" class="h-full">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,33 +10,157 @@
 </head>
 
 <body class="bg-[#E7E7E3] text-text-color dark:bg-black dark:text h-full">
-  <header class=" flex absolute header bg-[#FAFAFA] h-[96px] w-[1320px] rounded-3xl place-content-center mb-[32px]">
-    <div class="top_bar absolute">
-      <div class=" list-none flex-row absolute">
-        <p class="text-[16px] font-[600]"> New Drops</p>
-        <p class="text-[16px] font-[600]"> Men</p>
-        <p class="text-[16px] font-[600]"> Women</p>
+
+  <header class="header max-w-[1320px] mx-auto">
+    <div
+      class="header-inner bg-[#FAFAFA] rounded-3xl max-w-[1320px] max-h-[69px] flex items-center justify-between p-[32px]">
+      <img class="w-[128px]" src="public/img/logo.svg" alt="logo_kicks">
+      <nav class="nav flex gap-[30px] text-[14px] font-semibold position: relative hidden sm:block">
+        <a href="#">New Drops</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+      </nav>
+
+      <div class="header-actions gap-[40px] flex pr-0">
+        <button class="icon-btn" aria-label="Search">
+          <img src="public/img/search.png" alt="Search">
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <img src="public/img/card-png.png" alt="card">
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <img src="public/img/User.png" alt="card">
+        </button>
       </div>
-      <img class="w-[128px]  " src="public/img/logo.svg" alt="logo_kicks">
+    </div>
+    <div class="baner mt-[80px]">
+      <div class=" pt-[102px] pl-[40px]">
+        <p class="text-[#E7E7E3] text-[24px] font-semibold ">Limited time only</p>
+        <p class="text-white text-[74px] font-semibold mt-[8px] mb-[8px]">Get 30% off</p>
+        <p class="text-[#E7E7E3] text-[20px] font-normal ">Sneakers made with your comfort in mind so you <br> can put
+          all of your focus into your next session.</p>
+      </div>
+
     </div>
   </header>
-
-  <div class="grid grid-rows-[auto 1fr auto ] min-h-full container m-auto">
-
+  <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto mt-[129px] ">
     <main class="flex">
-      <div class="filter">
-        <h2>Filters</h2>
-        <form id="form-filter" action="">
-          <div class="form__item">
-            <div>
-              <label for="search">Введите название модели</label>
-            </div>
-            <div>
-              <input id="search" name="search" type="text" placeholder="Поиск" required>
+      <div class="filter max-w-[315px] mr-[18px] hidden sm:block">
+        <h2 class="font-semibold text-[24px] mb-[24px]">Filters</h2>
+        <p class=" text-[16px] uppercase font-semibold mb-[18px]">Refine by</p>
+        <div>
+          <button
+            class="bg-[#4A69E2] px-[16px] py-[12px] rounded-xl text-[12px] font-semibold text-white hover:bg-[#192d7e] mr-[16px]">Mens</button>
+          <button
+            class="bg-[#4A69E2] px-[16px] py-[12px] rounded-xl text-[12px] font-semibold text-white hover:bg-[#192d7e]">Casual</button>
+        </div>
+        <p class=" text-[16px] uppercase font-semibold mt-[24px] mb-[16px]">Size</p>
+        <div class="size mb-8 grid grid-cols-4 gap-4 max-w-[260px]">
+          <div class="filter-size ">
+            <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+              <label class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]" for="color-black"
+               tabindex="0">
+                <p class="text-black">48</p>
+              </label>
             </div>
           </div>
+          <div class="filter-size ">
+            <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+              <label class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]" for="color-black"
+               tabindex="0">
+                <p class="text-black">48</p>
+              </label>
+            </div>
+          </div>
+          <div class="filter-size ">
+            <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+              <label class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]" for="color-black"
+               tabindex="0">
+                <p class="text-black">48</p>
+              </label>
+            </div>
+          </div>
+          <div class="filter-size ">
+            <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+              <label class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]" for="color-black"
+               tabindex="0">
+                <p class="text-black">48</p>
+              </label>
+            </div>
+          </div>
+          <div class="filter-size ">
+            <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+              <label class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]" for="color-black"
+               tabindex="0">
+                <p class="text-black">48</p>
+              </label>
+            </div>
+          </div>
+          <div class="filter-size ">
+            <div class="filter-size__item "> <input class="size-radio" type="radio" name="size" id="color-white id">
+              <label class="size-lable cursor-pointer place-items-center content-center text-center bg-white hover:bg-gray-400 focus:bg-[#4A69E2]" for="color-black"
+               tabindex="0">
+                <p class="text-black">48</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="size">
+          <p class=" text-[16px] uppercase font-semibold mb-[16px] mt-[24px] "> view</p>
+          <div flex gap-x-[8px]>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Casual shoes
+              </label>
+            </div>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Runners
+              </label>
+            </div>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Hiking
+              </label>
+            </div>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Sneaker
+              </label>
+            </div>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Basketball
+              </label>
+            </div>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Golf
+              </label>
+            </div>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Outdoor
+              </label>
+            </div>
+            <div class="flex items-center mb-[8px]">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 border text-[#232321] border-default-medium rounded-xs focus:border-[#4A69E2] ">
+              <label for="default-checkbox" class="select-none ml-[16px] text-sm font-medium text-heading"> Casual shoes
+              </label>
+            </div>
+          </div>
+        </div>
+        <form id="form-filter" action="">
           <div class="form__item">
-            <h3>выбор цвета</h3>
+            <h3 class=" text-[16px] uppercase font-semibold  mt-[24px] mb-[16px]"> colors</h3>
             <div class="filter-color">
               <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-violet">
                 <label class="color-lable" for="color-violet" style="background-color: #4A69E2;" tabindex="0"></label>
@@ -44,175 +168,306 @@
               <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-yellow">
                 <label class="color-lable" for="color-yellow" style="background-color: #FFA52F;" tabindex="0"></label>
               </div>
+              <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-black">
+                <label class="color-lable" for="color-black" style="background-color: #232321;" tabindex="0"></label>
+              </div>
+              <div class="filter-color__item"> <input class="color-radio" type="radio" name="color" id="color-red">
+                <label class="color-lable" for="color-red" style="background-color: #f02f2f;" tabindex="0"></label>
+              </div>
+
             </div>
           </div>
-          <div class="form__item">
-            <input class="form__btn" type="submit" value="Искать">
-          </div>
+
         </form>
+        <div class="relative">
+
+          <h3 class=" text-[16px] uppercase font-semibold  mt-[24px] mb-[16px]"> prise</h3>
+          <label for="labels-range-input" class="sr-only">Labels range</label>
+          <input id="labels-range-input" type="range" value="1000" min="100" max="1500"
+            class="w-full h-[4px] bg-[#000000] rounded-full appearance-none cursor-pointer">
+          <span class="text-sm text-body absolute start-0 -bottom-6 text-[#232321]">Min (0$)</span>
+          <span class="text-sm text-body absolute end-0 text-[#232321] -bottom-6">Max (1000$)</span>
+        </div>
+
       </div>
       <div>
-        <h1 class="uppercase text-[74px] font-semibold text-lg/17">Don’t miss out <br> new drops</h1>
-        <button class="text-[14px] text-white bg-[#4A69E2] rounded-lg px-8 py-2">Shop New Drops</button>
-        <div
-          class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6 mt-[32px]">
+        <div class="catalog grid grid-cols-1 sm:grid-cols-2 w-7xl:grid-cols-2 md:grid-cols-3 gap-x-[16px] gap-y-[38px]">
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out"> View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl md:border-[8px] sm:border-[6px]  border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] md:text-[24px] xs:text-[24px] ms:text-[18px] font-semibold uppercase"> adidas 4dfwd
+                x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
 
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl md:border-[8px] sm:border-[6px]  border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] md:text-[24px] xs:text-[24px] ms:text-[18px] font-semibold uppercase"> adidas 4dfwd
+                x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
+          </div>
+          <div class="card_relative">
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl md:border-[8px] sm:border-[6px]  border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] md:text-[24px] xs:text-[24px] ms:text-[18px] font-semibold uppercase"> adidas 4dfwd
+                x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
 
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl md:border-[8px] sm:border-[6px]  border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] md:text-[24px] xs:text-[24px] ms:text-[18px] font-semibold uppercase"> adidas 4dfwd
+                x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
-           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+          <div class="card_relative">
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
-           <div class="card_relative">
-            <div class="relative rounded-4xl border-[8px] border-white rounded-3xl">
-              <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
-              <div
-                class=" bg-[#4A69E2] text-stone-50 w-[58px] text-center absolute top-0 left-0  flex flex-col p-2 text-[12px] rounded-br-3xl rounded-tl-3xl">
-                New</div>
-            </div>
-            <h3 class=" mt-[16px] text-[24px] font-bold uppercase"> adidas 4dfwd x parley running shoes </h3>
-            <button
-              class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 mt-2 cursor-pointer rounded-lg transition ease-in-out">View
-              Product - <span class="text-[#FFA52F]">$125</span></button>
+          <div class="card_relative">
+            <a href="card1.html" target="_blank">
+              <div class="relative rounded-4xl border-[8px] border-white">
+                <img src="/public/img/card-1.png" alt="серый кроссовок" class="w-full h-full object-cover rounded-3xl ">
+                <div
+                  class=" bg-[#4A69E2] text-stone-50 max-w-[58px] max-h-[38px] text-center absolute top-0 left-0  flex flex-col p-2 pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-[12px] rounded-br-3xl rounded-tl-3xl font-semibold ">
+                  New</div>
+              </div>
+              <h3 class=" mt-[16px] text-[24px] font-semibold uppercase"> adidas 4dfwd x parley running shoes </h3>
+              <button
+                class=" mt-[16px] w-full min-h-[50px] bg-[#232321] text-white text-[14px] uppercase hover:bg-[#10100F] focus:bg-[#10100F] p-1 cursor-pointer rounded-lg transition ease-in-out">
+                View Product - <span class="text-[#FFA52F]">$125</span></button>
+            </a>
           </div>
-
-
-
         </div>
+        <nav aria-label="Page navigation example mx-auto">
+          <ul class="pagination flex gap-[16px] text-sm content-center justify-center mt-[64px]">
+            <li>
+              <a href="#"
+                class="pagination_arrow  flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium rounded-s-base text-sm px-3 h-9 focus:outline-none">Previous</a>
+            </li>
+            <li>
+              <a href="#"
+                class="pagination_item flex  items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">1</a>
+            </li>
+            <li>
+              <a href="#"
+                class="pagination_item flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">2</a>
+            </li>
+            <li>
+              <a href="#" aria-current="page"
+                class="pagination_item flex items-center justify-center text-fg-brand bg-neutral-tertiary-medium box-border border border-default-medium hover:text-fg-brand font-medium text-sm w-9 h-9 focus:outline-none">3</a>
+            </li>
+            <li>
+              <a href="#"
+                class="pagination_item flex items-center justify-center text-body box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">4</a>
+            </li>
+            <li>
+              <a href="#"
+                class="pagination_item flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">5</a>
+            </li>
+            <li>
+              <a href="#"
+                class="pagination_arrow flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium rounded-e-base text-sm px-3 h-9 focus:outline-none">Next</a>
+            </li>
+          </ul>
+        </nav>
       </div>
   </div>
   </main>
-  <footer>
-    <p> &copy; Сухополюева Екатерина, 2025</p>
+  <footer class="mt-[70px] ">
+    <div class="mx-auto max-w-[1320px] rounded-[40px] bg-[#181818] px-[40px] py-[40px] text-white flex flex-col md:flex-row md:items-start md:justify-between">
+      <div class="md:w-[40%] space-y-4">
+        <img src="public/img/footer.png" alt="" srcset="">
+        <div>
+          <h3 class="text-2xl font-semibold text-[#f59e0b] mb-2">
+            About us
+          </h3>
+          <p class="text-sm text-[#E7E7E3] leading-relaxed">
+            We are the biggest hyperstore in the universe.
+            We got you all cover with our exclusive
+            collections and latest drops.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col gap-8 md:flex-row md:justify-end">
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold text-[#FFA52F]">Categories</h4>
+          <ul class="space-y-1 text-sm text-[#E7E7E3]">
+            <li>Runners</li>
+            <li>Sneakers</li>
+            <li>Basketball</li>
+            <li>Outdoor</li>
+            <li>Golf</li>
+            <li>Hiking</li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold text-[#FFA52F]">Company</h4>
+          <ul class="space-y-1 text-sm text-[#E7E7E3]">
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold text-[#FFA52F]"> Follow us </h4>
+          <ul class="space-y-1 flex gap-[24px] text-[#E7E7E3]">
+            <span> <img src="public/img/img1.png" alt=""> </span>
+            <span> <img src="public/img/img2.png" alt=""> </span>
+            <span> <img src="public/img/img3.png" alt=""> </span>
+            <span> <img src="public/img/img4.png" alt=""> </span>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </footer>
   </div>
+
+
+
   <script type="module" src="/src/main.js"></script>
 </body>
 
